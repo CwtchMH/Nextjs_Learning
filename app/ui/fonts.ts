@@ -1,7 +1,12 @@
-import { Inter } from 'next/font/google'
-import { Lusitana } from 'next/font/google'
+import { Inter, Lusitana } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
-const lusitana = Lusitana({ weight: '700' })
+const inter = Inter({
+  subsets: ['latin'],
+});
 
-export { inter, lusitana }
+const lusitana = Lusitana({
+  subsets: ['latin'], // Đảm bảo thêm subsets nếu cần
+  weight: '700', // Định nghĩa trọng số (weight)
+});
+
+export { inter, lusitana };
